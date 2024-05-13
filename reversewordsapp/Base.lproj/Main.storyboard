@@ -17,46 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-jx-0bB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1N-jx-0bB">
                                 <rect key="frame" x="79" y="717" width="234" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Reverse"/>
                                 <connections>
                                     <action selector="reverseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6N-iu-bze"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4V-06-2Ag">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4V-06-2Ag">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Reverse Words" id="0CJ-7Q-Lld"/>
                                 </items>
                                 <navigationBarAppearance key="standardAppearance"/>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-aH-6Wr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-aH-6Wr">
                                 <rect key="frame" x="68" y="164" width="257" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This application will reverse your words. Please type text below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-Ie-g6O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This application will reverse your words. Please type text below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-Ie-g6O">
                                 <rect key="frame" x="13" y="227" width="367" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpG-PP-dME">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpG-PP-dME">
                                 <rect key="frame" x="20" y="369" width="352" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-ul-CJw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-ul-CJw">
                                 <rect key="frame" x="20" y="424" width="352" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,6 +58,26 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3RU-Ie-g6O" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.122066" id="0HX-Ym-Vkd"/>
+                            <constraint firstItem="ucO-aH-6Wr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Iw-gN-LTw"/>
+                            <constraint firstItem="ucO-aH-6Wr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0528169" id="1H3-Qw-Uox"/>
+                            <constraint firstItem="W4V-06-2Ag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Yi-Ip-da3"/>
+                            <constraint firstItem="DEf-ul-CJw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.895674" id="D4Q-W8-hJR"/>
+                            <constraint firstItem="gpG-PP-dME" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EDm-dG-l6c"/>
+                            <constraint firstItem="gpG-PP-dME" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0399061" id="EMQ-Kw-zM7"/>
+                            <constraint firstItem="DEf-ul-CJw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Eim-zQ-dec"/>
+                            <constraint firstItem="W4V-06-2Ag" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0516432" id="FZ3-F9-x9q"/>
+                            <constraint firstItem="3RU-Ie-g6O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Iha-Ak-VPM"/>
+                            <constraint firstItem="W4V-06-2Ag" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Q13-Cp-5ri"/>
+                            <constraint firstItem="M1N-jx-0bB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.59542" id="VAn-d1-EMX"/>
+                            <constraint firstItem="3RU-Ie-g6O" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.933842" id="fZf-b2-ET1"/>
+                            <constraint firstItem="DEf-ul-CJw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0551643" id="fp3-18-twg"/>
+                            <constraint firstItem="M1N-jx-0bB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0610329" id="k4g-aN-qiY"/>
+                            <constraint firstItem="gpG-PP-dME" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.895674" id="qH9-nG-ILp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M1N-jx-0bB" secondAttribute="bottom" constant="49" id="rsa-Yy-vIC"/>
+                            <constraint firstItem="ucO-aH-6Wr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.653944" id="tr3-w0-TvV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="gpG-PP-dME" id="PAb-Hi-SpG"/>
