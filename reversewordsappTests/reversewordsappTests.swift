@@ -2,34 +2,40 @@
 //  reversewordsappTests.swift
 //  reversewordsappTests
 //
-//  Created by Anastasia Tochilova  on 21.05.2024.
+//  Created by Anastasia Tochilova  on 14.05.2024.
 //
 
 import XCTest
+@testable import reversewordsapp
 
-final class reversewordsappTests: XCTestCase {
+final class ReverseViewControllerTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewController: ReverseViewController!
+    var inputTextField: UITextField!
+    var resultLabel: UILabel!
+    
+    override func setUp() {
+        super.setUp()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        viewController =
+        storyboard.instantiateViewController(withIdentifier: "ReverseViewController") as? ReverseViewController
+        viewController.loadViewIfNeeded()
+        inputTextField = viewController.inputTextField
+        resultLabel = viewController.resultLabel
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        viewController = nil
+        inputTextField = nil
+        resultLabel = nil
+        
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testReverseButtonTapped() {
+        inputTextField.text = "sup bro"
+        viewController.reverseButtonTapped(UIButton())
+        let expectedOutput = "pus orb"
+        XCTAssertEqual(resultLabel.text, expectedOutput, "The result label text is not correct after button tap")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
