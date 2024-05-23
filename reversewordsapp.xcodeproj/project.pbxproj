@@ -13,7 +13,18 @@
 		4D5374592BE4F5E500015BB9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D5374582BE4F5E500015BB9 /* Base */; };
 		4D53745B2BE4F5E600015BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D53745A2BE4F5E600015BB9 /* Assets.xcassets */; };
 		4D53745E2BE4F5E600015BB9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4D53745D2BE4F5E600015BB9 /* Base */; };
+		4DD7779B2BFCB7CC006F792B /* reversewordsappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7779A2BFCB7CC006F792B /* reversewordsappTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DD7779C2BFCB7CC006F792B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5374462BE4F5E500015BB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D53744D2BE4F5E500015BB9;
+			remoteInfo = reversewordsapp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4D53744E2BE4F5E500015BB9 /* reversewordsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reversewordsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		4D53745A2BE4F5E600015BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D53745D2BE4F5E600015BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D53745F2BE4F5E600015BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD777982BFCB7CC006F792B /* reversewordsappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reversewordsappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD7779A2BFCB7CC006F792B /* reversewordsappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reversewordsappTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4D53744B2BE4F5E500015BB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD777952BFCB7CC006F792B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				4D5374502BE4F5E500015BB9 /* reversewordsapp */,
+				4DD777992BFCB7CC006F792B /* reversewordsappTests */,
 				4D53744F2BE4F5E500015BB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4D53744E2BE4F5E500015BB9 /* reversewordsapp.app */,
+				4DD777982BFCB7CC006F792B /* reversewordsappTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +95,14 @@
 				4D5374532BE4F5E500015BB9 /* SceneDelegate.swift */,
 			);
 			path = reversewordsapp;
+			sourceTree = "<group>";
+		};
+		4DD777992BFCB7CC006F792B /* reversewordsappTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DD7779A2BFCB7CC006F792B /* reversewordsappTests.swift */,
+			);
+			path = reversewordsappTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +125,24 @@
 			productReference = 4D53744E2BE4F5E500015BB9 /* reversewordsapp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4DD777972BFCB7CC006F792B /* reversewordsappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DD777A02BFCB7CC006F792B /* Build configuration list for PBXNativeTarget "reversewordsappTests" */;
+			buildPhases = (
+				4DD777942BFCB7CC006F792B /* Sources */,
+				4DD777952BFCB7CC006F792B /* Frameworks */,
+				4DD777962BFCB7CC006F792B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DD7779D2BFCB7CC006F792B /* PBXTargetDependency */,
+			);
+			name = reversewordsappTests;
+			productName = reversewordsappTests;
+			productReference = 4DD777982BFCB7CC006F792B /* reversewordsappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,11 +150,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					4D53744D2BE4F5E500015BB9 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					4DD777972BFCB7CC006F792B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4D53744D2BE4F5E500015BB9;
 					};
 				};
 			};
@@ -124,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				4D53744D2BE4F5E500015BB9 /* reversewordsapp */,
+				4DD777972BFCB7CC006F792B /* reversewordsappTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +189,13 @@
 				4D53745B2BE4F5E600015BB9 /* Assets.xcassets in Resources */,
 				4D53745E2BE4F5E600015BB9 /* Base in Resources */,
 				4D5374592BE4F5E500015BB9 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD777962BFCB7CC006F792B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +212,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DD777942BFCB7CC006F792B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD7779B2BFCB7CC006F792B /* reversewordsappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DD7779D2BFCB7CC006F792B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D53744D2BE4F5E500015BB9 /* reversewordsapp */;
+			targetProxy = 4DD7779C2BFCB7CC006F792B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4D5374572BE4F5E500015BB9 /* Main.storyboard */ = {
@@ -349,6 +425,44 @@
 			};
 			name = Release;
 		};
+		4DD7779E2BFCB7CC006F792B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UH342LX92S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.reversewordsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reversewordsapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/reversewordsapp";
+			};
+			name = Debug;
+		};
+		4DD7779F2BFCB7CC006F792B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UH342LX92S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.reversewordsappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reversewordsapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/reversewordsapp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +480,15 @@
 			buildConfigurations = (
 				4D5374632BE4F5E600015BB9 /* Debug */,
 				4D5374642BE4F5E600015BB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DD777A02BFCB7CC006F792B /* Build configuration list for PBXNativeTarget "reversewordsappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD7779E2BFCB7CC006F792B /* Debug */,
+				4DD7779F2BFCB7CC006F792B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
